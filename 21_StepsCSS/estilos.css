@@ -1,0 +1,100 @@
+/* Animacion CSS 
+@keyframes nombreDeLaAnimacion{
+0%{}
+5.6%{}
+10%{}
+50%{}
+100%{}
+}
+*/
+
+@keyframes trasladar2 {
+	0%{
+		transform: translateX(2000px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+@keyframes zombie{
+	0%{
+		background-position: 2000px;
+	}
+	100%{
+		background-position: 0px;
+	}
+}
+
+@keyframes caminar1{
+	0%{
+		background-position: 2929px;
+	}
+	100%{
+		background-position: 180px;
+	}
+}
+@keyframes caminar2{
+	0%{
+		background-position: 1472px;
+	}
+	100%{
+		background-position: 0px;
+	}
+}
+
+
+@keyframes trasladar{
+	0%{
+		transform: translateX(-150px);
+	}
+	100%{
+		transform: translateX(990px);
+	}
+}
+
+
+
+
+
+.caballo{
+	background: url("img/Horse-frames.jpg");
+	height: 121px;
+	width: 180px;
+	animation-name: caminar1,trasladar;
+	animation-duration: 4s,3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(15);
+	/*animation-direction: reverse;*/
+​  }
+
+.zombie1{
+	background: url("img/steps3.png");
+	height: 312px;
+	width: 200px;
+	animation-name: zombie,trasladar2;
+	animation-duration: 1s,30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(10),linear;
+	/*animation-direction: reverse;*/
+​  }
+
+
+
+
+.cartoon1{
+	
+	background: url("img/capguy-walk.png");
+	background-position: 0px;
+	height: 325px;
+	width: 180px;
+	animation-name: caminar2,trasladar;
+	animation-duration: 1s,15s;
+	animation-iteration-count: infinite,1;
+	animation-timing-function: steps(8),linear;
+	position: absolute;
+	animation-fill-mode: forwards;
+  }
+
+
+
